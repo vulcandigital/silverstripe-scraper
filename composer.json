@@ -13,7 +13,8 @@
     "silverstripe/framework": "^4.0",
     "guzzlehttp/guzzle": "~6.0",
     "silverstripe/crontask": "^2.1",
-    "sunra/php-simple-html-dom-parser": "1.5.2"
+    "kub-at/php-simple-html-dom-parser": "^1.9.1",
+    "php": ">=7.3"
   },
   "require-dev": {
     "phpunit/PHPUnit": "^5.7"
