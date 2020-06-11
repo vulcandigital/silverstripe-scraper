@@ -38,9 +38,11 @@ class ScraperEngine
         ]);
     }
 
-    public function fetch($query = [])
+    public function fetch($query = [], $endpoint = null)
     {
-        $this->response = $this->guzzle->get($this->getEndpoint(), [
+        $endpoint = $endpoint ? $endpoint : $this->getEndpoint();
+
+        $this->response = $this->guzzle->get($endpoint, [
             'query' => $query
         ]);
 
